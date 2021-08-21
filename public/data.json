@@ -1,0 +1,31 @@
+{
+  "genre": [
+    {
+      "Mystery": [
+        "Then There Were None",
+        "The Big Sleep",
+        "Gone Girl",
+        "Postman Always Rings Twice",
+        "In Cold Blood"
+      ]
+    },
+    {
+      "Fantasy": [
+        "The Lord of the Rings",
+        "Alice’s Adventures in Wonderland",
+        "The King of Elfland’s Daughter",
+        "The Sword in the Stone",
+        "Prince Caspian"
+      ]
+    },
+    {
+      "Thriller": [
+        "Before I Go To Sleep",
+        "Big Little Lies",
+        "Bird Box",
+        "The Da Vinci Code",
+        "The Shadow of the Wind"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+/* general page layout */
+* {
+    font-family: 'Font Awesome 5 Free', sans-serif !important;
+    box-sizing: border-box;
+}
+
+.appContainer { /* flexbox for page layout (so footer sticks to bottom of page) */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 25px;
+    flex: 1;
+}
+
+/* User Log-in header */
+
+.welcome {
+    font-size: x-large;
+}
+
+.sign-in-box {
+    display: flex;
+    flex-direction: column; 
+}
+
+/* carousel */
+.carousel-discover {
+    box-shadow: 0 7px 8px rgba(0,0,0,.08), 
+    0 0 6px rgba(0,0,0,.06);
+    transition: .3s transform cubic-bezier(.25,.1,.25,1), .3s box-shadow;
+    border-radius: 25px;
+    background-color: #5e35b134;
+}
+
+.carousel-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.carousel-img {
+    width: auto;
+    height: 240px;
+    box-shadow: 0 7px 8px rgba(0,0,0,.08), 
+    0 0 6px rgba(0,0,0,.06);
+    transition: .3s transform cubic-bezier(.25,.1,.25,1), .3s box-shadow;
+}
+
+.carousel-img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.carousel-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar & footer */
+.bg-custom {
+    background-color: #5e35b1;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.navbar-height {
+    height: 65px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d1d1d17c;
+}
+
+.footer .contact-info {
+    color:rgba(85, 85, 85, 0.336)
+}
+
+.github-icon {
+    color: black;
+}
+
+.github-icon:hover {
+    color: black;
+}
+
+/* cards */
+.card-about, .card-book, .card {
+    border-radius: 25px;
+    box-shadow: 0 7px 8px rgba(0,0,0,.08), 
+    0 0 6px rgba(0,0,0,.06);
+    transition: .3s transform cubic-bezier(.25,.1,.25,1), .3s box-shadow;
+    background: white;
+}
+
+.card:hover{
+    transform: scale(1.07);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.card-book {
+    margin-top: 1.5rem;
+}
+
+
+/* dividers */
+.recently-listed {
+    width: 70%;
+    height: 55px;
+    background: #5e35b1;
+    opacity: .7;
+    line-height: 55px;
+    color: white;
+    font-size: 22px;
+    border-radius: 25px;
+}
+
+.get-started-bar, .books-profile, .book-matches, .discover-books, .sign-in {
+    width: 75%;
+    height: 60px;
+    background: #5e35b1;
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+/* about page */ 
+.blurb-box {
+    border-radius: 25px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
+
+.bg-blurb {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blurb-text {
+    width: 340px;
+}
+
+.icon img {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* scroll button on about page image */
+.learn-more-button:hover {
+    transition: .5s transform cubic-bezier(.25,.1,.25,1);
+    transform: translateY(10px);
+}
+
+.learn-more {
+    font-size: 45px;
+}
+
+.learn-more a {
+    color: #5e35b1;
+}
+
+/* have/want modals */
+.clear {
+    margin-left: 5px;
+}
+
+.add {
+    margin-top: 5px;
+}
+
+/* button coloring */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus{
+    background-color: #cdb6e0 !important; 
+    border-color: #cdb6e0 !important;
+    outline-color: #cdb6e0 !important;
+}
+
+.btn-primary:hover{
+    background-color: #b8a3c9 !important;
+}
+
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited
+.btn-danger:focus{
+    background-color: #5e35b1 !important;
+    border-color: #5e35b1 !important;
+    outline-color: #5e35b1 !important;
+}
+
+.btn-danger:hover{
+    background-color: #6e49b8 !important;
+    border-color: #6e49b8 !important;
+    outline-color: #6e49b8 !important;
+}
+
+/* button outline color for dragging mouse off button after clicking and holding */
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(205, 182, 224, 0.5)
+}
+
+/* primary button outline color when clicking and holding */
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(205, 182, 224, 0.5)
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: 0 0 0 .2rem rgba(185, 129, 231, 0.5)
+}
+
+/* danger button outline color when clicking and holding */
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.show>.btn-danger.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(185, 129, 231, 0.5)
+}
+
+/* user profile section */
+.profile-pic {
+    width: auto;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/* profile modal button */
+.submit {
+    margin-top: 10px;
+} 
+
+/* profile pic in navbar */
+.profile-pic-navbar {
+    border-radius: 50%;
+}
+
+/* Top5List */
+.topList {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Queries */
+
+/* on devices smaller than 576px */
+@media (max-width: 576px) {
+    .blurb-box {
+        border-radius: 0%;
+        box-shadow: none;
+        margin-bottom: 0px;
+        background-color: #d1d1d17c;
+    }
+    .blurb-text {
+        display: flexbox;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 290px;
+    }
+    
+    .get-started-bar, .books-profile, .book-matches, .discover-books, .sign-in {
+        width: 100%;
+        border-radius: 0%;
+    }
+    .profile-pic {
+        height: 180px;
+    }
+    .carousel-img {
+        height: 160px;
+    }
+    .carousel-title {
+        font-size: large;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+/* on devices 576px or wider */
+@media (min-width: 576px) {
+    .profile-pic {
+        height: 240px;
+    }
+}
+/* on devices 768px or wider */
+@media (min-width: 768px) {
+    .blurb-text {
+        width: 290px;
+    }
+    .profile-pic {
+        height: 300px;
+    }    
+}
